@@ -27,6 +27,7 @@ console.log(range(6, 2));
 console.log(range(8, -3, 4));
 
 
+console.log("<== === === === === === ==>");
 //[] Resolution
 function showSum(...nums) {
    let allSum = 0;
