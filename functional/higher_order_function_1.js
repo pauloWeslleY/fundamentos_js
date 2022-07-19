@@ -3,7 +3,6 @@
 ?   either by taking them as arguments or by
 ?   returning them, are called higher-order functions
 */
-
 function run(fn) {
    return fn();
 }
