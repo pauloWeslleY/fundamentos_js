@@ -19,18 +19,20 @@ const somar = (...numbers) => {
 }
 
 const isSubstract = (a, b) => a - b
-console.log(`Result is calc ${isSubstract(4, 1)}!!!`)
+console.log(`Result is calculator: ${isSubstract(4, 1)}!!!`)
 
 console.log(somar(1, 4))
 console.log(somar(1, 4, 6))
 console.log(somar(1, 4, 6, 87, 98))
 
+
+console.log('<|=== | === | ===|>');
 //! Challenge Arrow Function
 const calculator = base => exp => Math.pow(base, exp)
-console.log(calculator(35)(7))
+console.log(`Result this calc -> ${calculator(21)(10)}`)
 
 //? this
-Array.prototype.last = function () {
+Array.prototype.last = function() {
    console.log(this[this.length - 1])
 }
 

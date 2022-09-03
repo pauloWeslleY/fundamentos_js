@@ -10,3 +10,4 @@ function somar(y) {
 
 const result = somar('M')('N')('J')
 console.log(result)
+
