@@ -16,3 +16,30 @@ const nameIsValid = cart
    .map(getName)
 
 console.log(nameIsValid)
+
+
+
+//? <| === === === === === === |> Challenge method filter
+Array.prototype.myFilter = function () {
+   let price = []
+   for (let i = 0; i < cart.length; i++){
+      if (cart[i].price < 50) {
+         price.push(cart[i])
+      }
+   }
+   console.log(price);
+}
+
+Array.prototype.myFilter1 = function (fn) {
+   let price = []
+   for (let i = 0; i < this.length; i++){
+      if (fn(this[i], i, this)) {
+         price.push(this[i])
+      }
+   }
+   return price
+}
+
+const isValid = cart.myFilter1(qtdMoreToZero).map(getName)
+
+console.log(isValid)
