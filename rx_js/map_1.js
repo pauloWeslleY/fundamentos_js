@@ -31,9 +31,27 @@ const cart = [
    {name: "Printer", qtde: 0, price: 649.50},
 ]
 
+// const showNames = index => index.name
+// console.log(cart.map(showNames))
+
+// const calculator = index => index.qtde * index.price
+// const resultsCalc = cart.map(calculator)
+// console.log(resultsCalc)
+
+Array.prototype.myMap = function (fn) {
+   const mapped = []
+
+   for (let i = 0; i < this.length; i++){
+      // const result = fn(this[i], i, this)
+      mapped.push(fn(this[i], i, this))
+   }
+
+   return mapped
+}
+
 const showNames = index => index.name
-console.log(cart.map(showNames))
+console.log(cart.myMap(showNames))
 
 const calculator = index => index.qtde * index.price
-const resultsCalc = cart.map(calculator)
+const resultsCalc = cart.myMap(calculator)
 console.log(resultsCalc)
