@@ -34,9 +34,9 @@ const cart = [
 // const showNames = index => index.name
 // console.log(cart.map(showNames))
 
-// const calculator = index => index.qtde * index.price
-// const resultsCalc = cart.map(calculator)
-// console.log(resultsCalc)
+const calculator = index => index.qtde * index.price
+const resultsCalc = cart.map(calculator)
+console.log("teste: ",resultsCalc)
 
 Array.prototype.myMap = function (fn) {
    const mapped = []
@@ -51,6 +51,6 @@ Array.prototype.myMap = function (fn) {
 const showNames = index => index.name
 console.log(cart.myMap(showNames))
 
-const calculator = index => index.qtde * index.price
-const resultsCalc = cart.myMap(calculator)
-console.log(resultsCalc)
+// const calculator = index => index.qtde * index.price
+// const resultsCalc = cart.myMap(calculator)
+// console.log(resultsCalc)

@@ -1,3 +1,4 @@
+//? Filter #01, 02, 03
 const cart = [
    {name: "Notebook", qtde: 10, price: 7.99},
    {name: "Book", qtde: 4, price: 27.10},
